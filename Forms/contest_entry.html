@@ -1,0 +1,99 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contest Entry Form</title>
+    <style type="text/css">
+        ol,
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+    <p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
+
+    <form action="http://www.learningwebdesign.com/contest.php" method="post">
+
+        <fieldset>
+            <legend>
+                <p>Contest Entry Information</p>
+            </legend>
+
+            <ul>
+                <li><label for="form-name">Name:</label><input type="text" name="username" id="form-name"></li>
+                <li><label for="form-email">Email Address:</label> <input type="emailaddress" name="email" id="form-email"></li>
+                <li><label for="form-tel">Telephone number:</label><input type="tel" name="telephone" id="form-tel"></li>
+                <li><label for="form-story">My shoes are SO old…</label></li><br>
+                <textarea name="story" id="form-story" cols="60" rows="4" maxlength="300" placeholder="No more tha 300 characters long"></textarea>
+            </ul>
+        </fieldset>
+
+        <h2>Design your custom Forcefields:</h2>
+
+        <fieldset>
+            <legend>
+                <p>Custom Shoe Design</p>
+            </legend>
+
+            <fieldset>
+
+                <legend>
+                    <p>Color <em>(choose one)</em>:</p>
+                </legend>
+
+                <ul>
+                    <li><label><input type="radio" name="color" value="red">Red</label></li>
+                    <li><label><input type="radio" name="color" value="blue">Blue</label></li>
+                    <li><label><input type="radio" name="color" value="black">Black</label></li>
+                    <li><label><input type="radio" name="color" value="silver">Silver</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <p>Features <em>(Choose as many as you want)</em></p>
+                </legend>
+
+                <ul>
+                    <li><label><input type="checkbox" name="feature" value="laces"> Sparkley laces</label></li>
+                    <li><label><input type="checkbox" name="feature" value="logo" checked> Metallic logo</label></li>
+                    <li><label><input type="checkbox" name="feature" value="heels"> Light-up heels</label></li>
+                    <li><label><input type="checkbox" name="feature" value="mp3"> MP3-enabled</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <p>Size</p>
+                </legend>
+
+                <label for="form-size"><p>Sizes reflect standard men's sizes:</label>
+                <select name="size" id="form-size" size="1">
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+    </select>
+                </p>
+            </fieldset>
+        </fieldset>
+        <p><input type="submit" value="Pimp My Shoes!">
+            <input type="reset"></p>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
